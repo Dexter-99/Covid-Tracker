@@ -5,7 +5,7 @@ const Navbar = ({ logo, title }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-transparent p-4">
       <div className="container ">
-        <a className="title" href="#" style={{ fontWeight: "1000" }}>
+        <Link to="/" className="title" style={{ fontWeight: "1000" }}>
           <img
             src={logo}
             width="30"
@@ -14,7 +14,7 @@ const Navbar = ({ logo, title }) => {
             alt="logo"
           />
           {title}
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"

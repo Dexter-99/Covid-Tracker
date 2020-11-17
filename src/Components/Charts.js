@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 // import axios from "axios";
 import ChartGraph from "./Charts/ChartGraph";
 const Charts = ({ countryChartData }) => {

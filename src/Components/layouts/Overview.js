@@ -1,7 +1,6 @@
 import React from "react";
 import Virus from "../Images/virus.png";
 import Cough from "../Images/Cough.png";
-import Contact from "../Images/Contact.png";
 import Fever from "../Images/Fever.png";
 import Sneeze from "../Images/Sneeze.png";
 
@@ -15,6 +14,7 @@ const Overview = () => {
               src={Virus}
               className="w-75"
               style={{ display: "block", margin: "auto" }}
+              alt="Virus"
             />
           </div>
         </div>
@@ -52,7 +52,7 @@ const Overview = () => {
           <img
             className="card-img-top px-5 pt-5 pb-3"
             src={Cough}
-            alt="Card image cap"
+            alt="Cough"
           />
           <h4 className="text-center" style={{ color: " #5e35b1" }}>
             Cough
@@ -68,7 +68,7 @@ const Overview = () => {
           <img
             className="card-img-top px-5 pt-5 pb-3"
             src={Fever}
-            alt="Card image cap"
+            alt="Fever"
           />
           <h4 className="text-center" style={{ color: " #5e35b1" }}>
             Fever
@@ -83,7 +83,7 @@ const Overview = () => {
           <img
             className="card-img-top px-5 pt-5 pb-3"
             src={Sneeze}
-            alt="Card image cap"
+            alt="Sneeze"
           />
           <h4 className="text-center" style={{ color: " #5e35b1" }}>
             Sneeze

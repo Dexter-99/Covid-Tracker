@@ -28,7 +28,7 @@ const Overview = () => {
         </div>
         <div className="col-md-6 col-sm-12">
           <div className="image ml-4">
-            <img src={headerImage} className="w-100" />
+            <img src={headerImage} className="w-100" alt="Fight Corona" />
           </div>
         </div>
       </div>
