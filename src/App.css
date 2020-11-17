@@ -1,0 +1,102 @@
+.App {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #ede7f6;
+  font-family: "Lato", sans-serif;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+}
+nav .title {
+  text-decoration: none;
+  color: #5e35b1;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.links .active {
+  border-bottom: #5e35b1 solid 3px !important;
+}
+.go-back {
+  width: 30%;
+  padding: 10px 5px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #f4f4f4;
+  background-color: #5e35b1;
+  transition: all 0.5s ease-out;
+}
+.go-back:hover {
+  background-color: #7c4dff;
+}
+.home .content .check-stats {
+  width: 30%;
+  padding: 10px 5px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #f4f4f4;
+  background-color: #5e35b1;
+  transition: all 0.5s ease-out;
+}
+.home .content .check-stats:hover {
+  background-color: #7c4dff;
+}
+.chart {
+  margin: auto;
+  width: 720px;
+}
+.table-wrap {
+  height: 400px;
+  overflow-y: auto;
+  /* position: relative; */
+}
+
+@media only screen and (max-width: 500px) {
+  .chart {
+    display: none;
+  }
+  .home .content h3 {
+    text-align: center !important;
+  }
+  .home .content h1 {
+    text-align: center !important;
+  }
+  .home .content p {
+    text-align: center !important;
+  }
+  .home .content .check-stats {
+    width: 100% !important;
+  }
+  .overview .content {
+    margin-left: 0 !important;
+  }
+  .overview .content h3 {
+    text-align: center !important;
+  }
+  .overview .content h4 {
+    text-align: center !important;
+  }
+  .overview .content p {
+    text-align: center !important;
+  }
+  .overview .symptoms {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .overview .symptoms .card {
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
+  .overview .symptoms .card img {
+    width: 100px !important;
+    height: 100px !important;
+    padding: 0 !important;
+    display: block !important;
+    margin: auto !important;
+    margin-bottom: 1rem !important;
+  }
+}
