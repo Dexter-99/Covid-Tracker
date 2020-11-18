@@ -26,7 +26,7 @@ const ChartsIndia = ({ indianData }) => {
   return (
     <div className="container mt-5 py-5">
       <div className="d-flex flex-column ">
-        <div className="w-75 mx-auto">
+        <div className="w-75 mx-auto outer">
           <div className="chart">
             <h3 className="text-center">Confirmed Cases</h3>
             <BarGraph
@@ -37,7 +37,7 @@ const ChartsIndia = ({ indianData }) => {
             />
           </div>
         </div>
-        <div className="w-75 mx-auto">
+        <div className="w-75 mx-auto outer">
           <div className="chart">
             <h3 className="text-center">Active Cases</h3>
             <BarGraph
@@ -48,7 +48,7 @@ const ChartsIndia = ({ indianData }) => {
             />
           </div>
         </div>
-        <div className="w-75 mx-auto">
+        <div className="w-75 mx-auto outer ">
           <div className="chart">
             <h3 className="text-center">Recovered Cases</h3>
             <BarGraph
@@ -59,7 +59,7 @@ const ChartsIndia = ({ indianData }) => {
             />
           </div>
         </div>
-        <div className="w-75 mx-auto">
+        <div className="w-75 mx-auto outer ">
           <div className="chart">
             <h3 className="text-center">Total Deaths</h3>
             <BarGraph

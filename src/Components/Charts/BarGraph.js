@@ -14,7 +14,7 @@ const BarGraph = ({ chartCases, states, casesType, chartBackgroundColor }) => {
       },
     ],
   };
-  return <Bar data={data} />;
+  return <Bar data={data} options={{ maintainAspectRatio: false }} />;
 };
 
 export default BarGraph;

@@ -24,14 +24,14 @@ const CountriesDropdown = ({ selectedCountry }) => {
     );
     return items;
   };
-
+  let countryList = selectItems();
   return (
     <div className="form-group">
       <label htmlFor="countries" className="text-muted">
         Select Country :
       </label>
-      <select onChange={handleChange} className="form-control">
-        {selectItems()}
+      <select onChange={handleChange} className="form-control" required>
+        {countryList}
       </select>
     </div>
   );

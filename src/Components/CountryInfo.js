@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import axios from "axios";
 import Loader from "./Loader.js";
 import Charts from "./Charts";
+import CountUp from "react-countup";
 const CountryInfo = ({ country }) => {
   const [covidData, setCovidData] = useState("");
   const [countryChartData, setCountryChartData] = useState([]);
+  // const [loading, setLoading] = useState(false);
 
   const getData = () => {
     // console.log(country);
@@ -13,7 +15,7 @@ const CountryInfo = ({ country }) => {
     setTimeout(() => {
       document.getElementById("data").style.display = "block";
       document.getElementById("loader").style.display = "none";
-    }, 2000);
+    }, 1000);
     axios
       .get("https://api.covid19api.com/total/country/" + country)
       .then((res) => res.data)
@@ -24,12 +26,12 @@ const CountryInfo = ({ country }) => {
         setCovidData(data[index]);
       });
   };
-
   return (
     <div className="w-100">
       <button onClick={getData} className="btn btn-secondary ml-auto w-100">
         Get Statistics
       </button>
+
       <Loader />
       <div class="container mt-5" id="data" style={{ display: "none" }}>
         <div

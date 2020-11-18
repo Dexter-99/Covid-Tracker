@@ -16,7 +16,6 @@ const Tracker = () => {
       </h1>
       <CountriesDropdown selectedCountry={selectedCountry} />
       <CountryInfo country={country} />
-      <div></div>
     </div>
   );
 };

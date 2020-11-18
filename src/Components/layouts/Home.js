@@ -21,7 +21,7 @@ const Overview = () => {
               There is No Specific Medicine To Prevent Or Treat Coronavirus
               Disease (Covid-19), People May Need Supportive Care
             </p>
-            <Link to="/world-tracker" className="check-stats">
+            <Link to="/world-tracker" className="check-stats mt-4">
               Check Stats <i className="ml-2 far fa-arrow-alt-circle-right"></i>
             </Link>
           </div>

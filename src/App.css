@@ -48,7 +48,12 @@ nav .title {
 .chart {
   margin: auto;
   width: 720px;
+  overflow-x: scroll;
 }
+.outer {
+  margin: 1rem 0;
+}
+
 .table-wrap {
   height: 400px;
   overflow-y: auto;
@@ -56,8 +61,14 @@ nav .title {
 }
 
 @media only screen and (max-width: 500px) {
+  .outer {
+    position: relative !important;
+    overflow: auto !important;
+    width: 100% !important;
+  }
   .chart {
-    display: none;
+    position: relative !important;
+    height: 300px !important;
   }
   .home .content h3 {
     text-align: center !important;

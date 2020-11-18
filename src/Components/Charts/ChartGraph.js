@@ -4,6 +4,7 @@ import { Line } from "react-chartjs-2";
 const ChartGraph = ({
   chartCases,
   chartTime,
+  casesType,
   chartBorderColor,
   chartBackgroundColor,
   chartPointBackgroundColor,
@@ -15,7 +16,7 @@ const ChartGraph = ({
     labels: chartTime,
     datasets: [
       {
-        label: "Confirmed Cases",
+        label: casesType,
         data: chartCases,
         borderColor: chartBorderColor,
         backgroundColor: chartBackgroundColor,
