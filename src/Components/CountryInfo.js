@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import Loader from "./Loader.js";
 import Charts from "./Charts";
-import CountUp from "react-countup";
 const CountryInfo = ({ country }) => {
   const [covidData, setCovidData] = useState("");
   const [countryChartData, setCountryChartData] = useState([]);
