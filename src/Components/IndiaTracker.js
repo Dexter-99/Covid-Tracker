@@ -6,8 +6,10 @@ const IndiaTracker = () => {
   const [indianData, setIndianData] = useState([]);
   useEffect(() => {
     axios
-      .get("https://api.covidindiatracker.com/state_data.json")
-      .then((res) => setIndianData(res.data));
+      .get(
+        "https://api.rootnet.in/covid19-in/unofficial/covid19india.org/statewise"
+      )
+      .then((res) => setIndianData(res.data.data.statewise));
   }, []);
   return (
     <div className="container mt-5">
