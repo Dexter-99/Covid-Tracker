@@ -8,8 +8,8 @@ const CountriesDropdown = ({ selectedCountry }) => {
   };
   useEffect(() => {
     axios
-      .get("https://api.covid19api.com/countries")
-      .then((res) => setCountries(res.data));
+      .get("https://www.trackcorona.live/api/countries")
+      .then((res) => setCountries(res.data.data));
   }, []);
 
   const selectItems = () => {
@@ -17,8 +17,8 @@ const CountriesDropdown = ({ selectedCountry }) => {
     console.log(countries);
     countries.forEach((country) =>
       items.push(
-        <option key={country.Slug} value={country.Slug}>
-          {country.Country}
+        <option key={country.country_code} value={country.country_code}>
+          {country.location}
         </option>
       )
     );
