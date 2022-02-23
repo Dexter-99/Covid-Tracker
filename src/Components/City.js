@@ -17,7 +17,7 @@ const City = (props) => {
         className="row"
         // style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)" }}
       >
-        {data.map((item) => {
+        {Object.keys(data).map((item) => {
           return (
             <div className="col-lg-4 col-sm-12 p-3">
               <div
@@ -25,9 +25,9 @@ const City = (props) => {
                 style={{ border: "1px solid #5e35b1" }}
               >
                 <div className="card-body">
-                  <h5 className="card-title text-center">{item.name}</h5>
+                  <h5 className="card-title text-center">{item}</h5>
                   <p className="card-title text-center text-muted">
-                    {item.confirmed}
+                    {data[item].confirmed}
                   </p>
                 </div>
               </div>

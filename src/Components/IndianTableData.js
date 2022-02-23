@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const IndianTableData = ({ data }) => {
-  console.log(data);
+const IndianTableData = ({ data, districtData }) => {
   return (
     <div className="table-wrap table-responsive">
       <table class="table table-striped table-data">
@@ -48,8 +47,9 @@ const IndianTableData = ({ data }) => {
                   to={{
                     pathname: "/city-data",
                     state: {
-                      data: data[count].districtData,
-                      name: data[count].state,
+                      // let obj=
+                      data: districtData[item.state].districtData,
+                      name: item.state,
                     },
                   }}
                   className="btn btn-primary"
